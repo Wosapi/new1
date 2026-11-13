@@ -13,5 +13,5 @@
 
 1. استنساخ المستودع:
 ```bash
-git clone [https://github.com/](https://github.com/)<your-username>/sales-target-dashboard.git
-cd sales-target-dashboard
+git clone https://github.com/Wosapi/new1.git
+cd new1
