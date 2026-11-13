@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --navy: #142B4A;
+    --dark-blue: #1E3A5F;
+    --teal: #00A6A6;
+    --green: #16A36A;
+    --orange: #F59E0B;
+    --red: #DC3545;
+    --bg: #F4F7FB;
+    --white: #FFFFFF;
+    --text: #263445;
+}
+
+html, body, [class*="css"] {
+    font-family: 'Cairo', 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.stApp {
+    background-color: var(--bg);
+}
+
+/* Executive Navy Header Banner */
+.exec-banner {
+    background: linear-gradient(135deg, #142B4A 0%, #1E3A5F 100%);
+    color: #FFFFFF;
+    padding: 1.6rem 2rem;
+    border-radius: 16px;
+    margin-bottom: 1.4rem;
+    box-shadow: 0 8px 24px rgba(20, 43, 74, 0.12);
+    border-bottom: 4px solid #00A6A6;
+}
+
+.exec-badge {
+    display: inline-block;
+    background: rgba(22, 163, 106, 0.18);
+    color: #34D399;
+    font-weight: 700;
+    font-size: 0.78rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5rem;
+}
+
+.exec-title {
+    font-size: 1.85rem;
+    font-weight: 800;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.exec-sub {
+    font-size: 0.95rem;
+    color: #CBD5E1;
+    margin-top: 0.35rem;
+}
+
+/* KPI Cards */
+.kpi-card {
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 1.15rem 1.25rem;
+    box-shadow: 0 4px 14px rgba(20, 43, 74, 0.06);
+    border: 1px solid #E2E8F0;
+    border-top: 4px solid #142B4A;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    height: 100%;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(20, 43, 74, 0.10);
+}
+
+.kpi-card.green { border-top-color: #16A36A; }
+.kpi-card.orange { border-top-color: #F59E0B; }
+.kpi-card.red { border-top-color: #DC3545; }
+.kpi-card.teal { border-top-color: #00A6A6; }
+
+.kpi-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748B;
+    margin-bottom: 0.45rem;
+}
+
+.kpi-value {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: #142B4A;
+    line-height: 1.2;
+}
+
+.kpi-value.green { color: #16A36A; }
+.kpi-value.orange { color: #F59E0B; }
+.kpi-value.red { color: #DC3545; }
+.kpi-value.teal { color: #00A6A6; }
+
+.kpi-sub {
+    font-size: 0.78rem;
+    color: #64748B;
+    margin-top: 0.35rem;
+}
+
+/* Section Headers */
+.section-header {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #142B4A;
+    border-right: 4px solid #00A6A6;
+    padding-right: 0.75rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.ltr-mode .section-header {
+    border-right: none;
+    border-left: 4px solid #00A6A6;
+    padding-right: 0;
+    padding-left: 0.75rem;
+}
+
+/* Sidebar Polish */
+section[data-testid="stSidebar"] {
+    background-color: #FFFFFF;
+    border-left: 1px solid #E2E8F0;
+}
