@@ -1,3 +1,6 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 """
 Main Streamlit Application Entry Point:
 Enterprise Sales Target & Performance BI Dashboard.
