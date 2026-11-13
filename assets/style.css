@@ -1,21 +1,20 @@
-/* Mobile Responsiveness Enhancements (V2) */
-@media (max-width: 768px) {
-    .exec-title {
-        font-size: 1.35rem !important;
-    }
-    .kpi-card {
-        padding: 0.85rem;
-        margin-bottom: 0.75rem;
-    }
-    .kpi-value {
-        font-size: 1.3rem !important;
-    }
-    .stDataFrame {
-        overflow-x: auto;
-    }
+/* Navy Blue & Teal Theme */
+:root {
+    --navy-blue: #1E3A8A;
+    --teal: #008080;
+    --bg-light: #F8FAFC;
+    --text-dark: #0F172A;
 }
 
-.stDataFrame table {
-    width: 100%;
-    white-space: nowrap;
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    direction: rtl;
+}
+
+/* تحسين استجابة الجوال وبطاقات KPI */
+@media (max-width: 768px) {
+    .stMetric {
+        margin-bottom: 10px;
+    }
 }
